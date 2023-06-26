@@ -223,4 +223,106 @@
                     </div>
             </main>
             </div>
+
+            <div class="footer">
+                <div class="foto-footer">
+                    <br>
+                </div>
+                <div class="row ">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 ">
+                        <div class="list-unstyled ">
+                            <i class="fas fa-external-link-alt h2 "><span class="h2 "> Links</span></i>
+                            <ul class="style-type ">
+                                <a href="index.html">
+                                    <li>Home</li>
+                                </a>
+                                <a href="aboutUs.html">
+                                    <li>About Us</li>
+                                </a>
+                                <a href="contactUs.html">
+                                    <li>Contact Us</li>
+                                </a>
+                                <a href="news.html">
+                                    <li>News</li>
+                                </a>
+                                <a href="rockets.html">
+                                    <li>Rockets</li>
+                                </a>
+                            </ul> 
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 ">
+                        <div class="list-unstyled ">
+                            <i class="fas fa-map-marker-alt h2 "><span class="h2 ">Address</span></i>
+                            <p class="mb-1 ">Newbord</p>
+                            <p>USA</p>
+                            <p>10000</p>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+                        <div class="list-unstyled ">
+                            <i class="fas fa-envelope "><span class="h2 ">Email</span></i>
+                            <a href="mailto:bk52307@ubt-uni.net">info@spacex.com</a>
+                            <br>
+                            <br>
+                            <i class="fas fa-phone "><span class="h2 ">Phone</span></i>
+                            <p>+38 2021 202 445 54</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright copyright text-center py-3 ">© 2021 Copyright:
+                    <a href="https://www.spacex.com/"> SpaceX.com</a>
+
+                </div>
+            </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js "></script>
+<script>
+    $(document).ready(function() {
+        if ($(window).width() > 991) {
+            $('.navbar-light .d-menu').hover(function() {
+                $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+            }, function() {
+                $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
+            
+            });
+        }
+    });
+
+    var tickerLength = $('.carousel-inner-data ul li').length;
+    var tickerHeight = $('.carousel-inner-data ul li').outerHeight();
+    $('.carousel-inner-data ul li:list-child').prependTo('.carousel-inner-data ul');
+    $('.carousel-inner-data ul').css('marginTop', -tickerHeight);
+
+    function moveTop() {
+        $('.carousel-inner-data ul').animate({
+            top: -tickerHeight
+        }, 600, function() {
+            $('.carousel-inner-data ul li:first-child').appendTo('.carousel-inner-data ul');
+            $('.carousel-inner-data ul').css('top', '');
+        });
+    }
+
+    setInterval(function() {
+        moveTop();
+    }, 5000);
+
+    var loader = document.querySelector('.loader')
+    window.addEventListener("load", vanish);
+
+    function vanish() {
+        loader.classList.add("dissapear");
+    }
+    </script>
+    <script class="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+</html>
+
+
