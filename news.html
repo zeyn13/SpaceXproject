@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="manifest" href="favicons/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js" />
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.js" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <title>SpaceX</title>
+  </head>
+  <body>
+    <div class="loader">
+      <img src="./gallery/Loading.gif" alt="Loader" />
+    </div>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light shadow-sm bg-color1 text-color"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="gallery/logo.png" height="40" width="80" alt="" />
+          <span class="ml-5 font-weight-bold"></span>
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar4"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar4">
+          <ul class="navbar-nav mr-auto pl-lg-4">
+            <li class="nav-item px-lg-2 ">
+                <a class="nav-link" href="index.html"> <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a>
+            </li>
+            <li class="nav-item px-lg-2 active"> <a class="nav-link" href="news.html"><span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>News</a> </li>
+            <li class="nav-item px-lg-2"> <a class="nav-link" href="aboutUs.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></i></span>About Us</a> </li>
+            <li class="nav-item px-lg-2 dropdown d-menu">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-caret-square-down"></i></span>Rockets
+                    <svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                    </a>
+                    <div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="rockets.html">Rockets</a>
+                    </div>
+                </li>
+                <li class="nav-item px-lg-2"> <a class="nav-link" href="contactUs.html"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-envelope"></i></span>Contact Us</a> </li>
+          </ul>
+          <ul class="navbar-nav mr-auto  mt-3 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/SpaceX?s=08">
+                    <i class="fab fa-twitter"></i><span class="d-lg-none ml-3"> Twitter</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/SpaceIntel101/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0">
+                    <i class="fab fa-facebook"></i><span class="d-lg-none ml-3">Facebook</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/spacex/">
+                    <i class="fab fa-instagram"></i><span class="d-lg-none ml-3">Instagram</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/company/spacex/">
+                    <i class="fab fa-linkedin"></i><span class="d-lg-none ml-3">Linkedin</span>
+                </a>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <div class="row py-2">
+        <div class="col-1 col-md-3 col-lg-2 py-1 pr-md-0 mb-md-1">
+            <div class="d-inline-block d-md-block bg-primary text-white text-center breaking-caret py-1 px-2">
+                <span class="fas fa-bolt" title="Breaking News"></span>
+                <span class="d-none d-md-inline-block">Breaking</span>
+            </div>
+        </div>
+        <div class="col-11 col-md-9 col-lg-10 pl-1 pl-md-2">
+            <div class="breaking-box pt-2 pb-1">
+            <!--marque-->
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseleave="this.start();">
+                <a class="h6 font-weight-light" href="news.html"><span class="position-relative mx-2 badge bg-primary rounded-0">TECH WEDNESDAY</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, praesentium. </a>
+                <a class="h6 font-weight-light" href="news.html"><span class="position-relative mx-2 badge bg-primary rounded-0">FALCON</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum nulla nobis quidem consectetur laboriosam ut iure eaque? </a>
+                <a class="h6 font-weight-light" href="news.html"><span class="position-relative mx-2 bg badge-primary rounded-0">DRAGON</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, recusandae quasi? </a>
+                <a class="h6 font-weight-light" href="news.html"><span class="position-relative mx-2 badge bg-primary rounded-0">STARSHIP</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nam dolorum adipisci magni minus.</a>
+            </marquee>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="gallery/falcon9.jpg" height="40%" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>FIRST ORBITAL CLASS ROCKET CAPABLE OF REFLIGHT</h5>
+                                <p>Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="gallery/dragon.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>SENDING HUMANS AND CARGO INTO SPACE</h5>
+                                <p>The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="gallery/STARSHIP.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>SERVICE TO EARTH ORBIT, MOON, MARS AND BEYOND</h5>
+                                <p>SpaceX’s Starship spacecraft and Super Heavy rocket – collectively referred to as Starship – represent a fully reusable transportation system designed to carry both crew and cargo to Earth orbit, the Moon, Mars and beyond. Starship will be the world’s most powerful launch vehicle ever developed, capable of carrying up to 150 metric tonnes fully reusable and 250 metric tonnes expendable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 sidebar-page-container">
+            <div class="sidebar">
+                <div class="sidebar-widget sidebar-post">
+                    <div class="widget-title centerd">
+                        <h2 class="top1 font1 p-4">News Feed</h2>
+                    </div>
+                    <div class="post-inner pt-5">
+                        <div class="carousel-inner-data">
+                            <ul>
+                                <li>
+                                    <div class="post">
+                                        <div class="post-date">
+                                            <p>21</p><span>July</span></div>
+                                        <div class="file-box"><i class="fas fa-angle-right"></i>
+                                            <p>SpaceX</p>
+                                        </div>
+                                        <h5><a href="news.html">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</a></h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post">
+                                        <div class="post-date">
+                                            <p>22</p><span>July</span></div>
+                                        <div class="file-box"><i class="fas fa-angle-right"></i>
+                                            <p>Dragon</p>
+                                        </div>
+                                        <h5><a href="news.html"> Modi quia doloremque sed dignissimos velit pariatur illo!</a></h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post">
+                                        <div class="post-date">
+                                            <p>22</p><span>July</span></div>
+                                        <div class="file-box"><i class="fas fa-angle-right"></i>
+                                            <p>Falcon 9</p>
+                                        </div>
+                                        <h5><a href="news.html"> Quae consequuntur nesciunt nisi deserunt tempore.</a></h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post">
+                                        <div class="post-date">
+                                            <p>22</p><span>July</span></div>
+                                        <div class="file-box"><i class="fas fa-angle-right"></i>
+                                            <p>Starship</p>
+                                        </div>
+                                        <h5><a href="news.html">Odit ipsum dolores, quaerat provident mollitia!</a></h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row p-4">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="foto">
+                <a data-fancybox="lajme" href=""><img src="gallery/first.jpg" alt=""></a>
+                <h3>70 years ago, on October 24, 1946, a V-2 missile fitted with a 35mm camera took the first ever photo from space</h3>
+                <p>The grainy, black and white photo was, at the time, considered revolutionary. It was the first time humanity saw Earth in the context of the vast, empty space.</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="foto">
+                <a data-fancybox="lajme" href=""><img src="gallery/space.jpeg" alt=""></a>
+                <h3>Earth from space: How pioneering photos changed our view of the planet</h3>
+                <p>It’s over two millennia since Greek philosophers proposed that the Earth is round – but just 50 years since the first photos showing the whole planet were taken.</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="foto">
+                <a data-fancybox="lajme" href=""><img src="gallery/flag.avif" alt=""></a>
+                <h3>Neil Armstrong's Photo Legacy: Rare Views of First Man on the Moon</h3>
+                <p>The first man to set foot on a planetary body other than Earth was not camera shy.</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="foto">
+                <a data-fancybox="lajme" href=""><img src="gallery/lost.png" alt=""></a>
+                <h3>What Happened to the People Lost in Space?</h3>
+                <p>Space has no boundaries and you must admit that there is something incredibly attractive and mysterious in this dark Vale surrounding our planet.</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="foto">
+                <a data-fancybox="lajme" href=""><img src="gallery/falconnews.jpg" alt=""></a>
+                <h3>Looking Back at 10 Years of Falcon 9 Launches</h3>
+                <p>SpaceX's Falcon 9 rocket has certainly earned its place in history. Falcon 9 is the first orbital class rocket to be reused and the first commercial rocket to ferry human passengers to the ISS.</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="foto">
+                    <a data-fancybox="produktet" href=""><img src="gallery/dragonnews.jpg"></a>
+                    <h3>What is the SpaceX Crew Dragon?</h3>
+                    <p>Elon Musk's SpaceX has built the Crew Dragon primarily to carry astronauts to the International Space Station.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foto-footer">
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="list-unstyled">
+                    <i class="fas fa-external-link-alt h2 "><span class="h2 "> Links</span></i>
+                    <ul class="style-type ">
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="aboutUs.html">
+                            <li>About Us</li>
+                        </a>
+                        <a href="contactUs.html">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="news.html">
+                            <li>News</li>
+                        </a>
+                        <a href="rockets.html">
+                            <li>Rockets</li>
+                        </a>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="list-unstyled">
+                    <i class="fas fa-map-marker-alt h2 "><span class="h2 ">Address</span></i>
+                    <p class="mb-1 ">Newbord</p>
+                    <p>USA</p>
+                    <p>10000</p>
+                </div>
+                <br>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+                <div class="list-unstyled ">
+                    <i class="fas fa-envelope "><span class="h2 ">Email</span></i>
+                    <a href="mailto:eriandauti00@gmail.com">info@spacex.com</a>
+                    <br>
+                    <br>
+                    <i class="fas fa-phone "><span class="h2 ">Phone</span></i>
+                    <p>+38 201 202 445 54</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright copyright text-center py-3">© 2023 Copyright:
+            <a href="https://www.spacex.com/"> SpaceX.com</a>
+        </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js "></script>
+<script>
+    $(document).ready(function() {
+        if ($(window).width() > 991) {
+            $('.navbar-light .d-menu').hover(function() {
+                $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+            }, function() {
+                $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
+            });
+        }
+    });
+    $(function() {
+        var tickerLength = $('.carousel-inner-data ul li').length;
+        var tickerHeight = $('.carousel-inner-data ul li').outerHeight();
+        $('.carousel-inner-data ul li:last-child').prependTo('.carousel-inner-data ul');
+        $('.carousel-inner-data ul').css('marginTop', -tickerHeight);
+
+        function moveTop() {
+            $('.carousel-inner-data ul').animate({
+                top: -tickerHeight
+            }, 600, function() {
+                $('.carousel-inner-data ul li:first-child').appendTo('.carousel-inner-data ul');
+                $('.carousel-inner-data ul').css('top', '');
+            });
+        }
+        setInterval(function() {
+            moveTop();
+        }, 5000);
+    });
+
+    var loader = document.querySelector('.loader')
+    window.addEventListener("load", vanish);
+
+    function vanish() {
+        loader.classList.add("dissapear");
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</html>
